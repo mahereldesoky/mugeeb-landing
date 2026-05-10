@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مُجيب AI - نظام حجز وإدارة العيادات الذكي عبر الواتساب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z" />
+                    </svg>
+                </div>
+                <span class="text-2xl font-extrabold text-brand-900 tracking-tight">مُجيب <span class="text-brand-500">AI</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#features" class="font-semibold text-slate-600 hover:text-brand-500 transition-colors">المميزات</a>
+                <a href="#about" class="font-semibold text-slate-600 hover:text-brand-500 transition-colors">من نحن</a>
+                <a href="#pricing" class="font-semibold text-slate-600 hover:text-brand-500 transition-colors">الأسعار</a>
+                <a href="#contact" class="font-semibold text-slate-600 hover:text-brand-500 transition-colors">تواصل معنا</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex bg-brand-500 hover:bg-brand-600 text-white font-bold px-5 tap-6 py-2.5 rounded-xl shadow-lg shadow-brand-500/20 transition-all hover:-translate-y-0.5">ابدأ تجربة مجانية</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-brand-50 via-white to-slate-50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-right">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 text-brand-700 text-sm font-bold">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+                    نظام الحجز والرد الآلي المعتمد لعيادات نيو كايرو
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-[1.15] md:leading-[1.15]">
+                    حوّل واتساب عيادتك إلى <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-700">موظف استقبال ذكي</span> يعمل 24 ساعة
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    منصة "مُجيب AI" تتيح للأطباء والمراكز الطبية استقبال الحجوزات، الإجابة التلقائية والدقيقة على استفسارات المرضى، وتنسيق المواعيد عبر تطبيق WhatsApp بشكل فوري وتفاعلي بالعامية المصرية.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto text-center bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-lg px-8 py-4 rounded-xl shadow-xl shadow-brand-500/25 transition-all hover:-translate-y-0.5">احجز نسختك التجريبية الآن</a>
+                    <a href="#features" class="w-full sm:w-auto text-center bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-lg px-8 py-4 rounded-xl transition-all">اكتشف المميزات</a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-[400px] aspect-[4/5] bg-gradient-to-tr from-brand-500 to-brand-600 rounded-3xl shadow-2xl p-6 flex flex-col justify-between text-white overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15),transparent)]"></div>
+                    <div class="flex items-center gap-3 border-b border-white/10 pb-4">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                            ⚕️
+                        </div>
+                        <div>
+                            <p class="font-bold">عيادة دكتور الأسنان - مُجيب AI</p>
+                            <p class="text-xs text-white/70">متصل الآن ومستعد للحجز</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 my-6 flex-1 flex flex-col justify-end text-sm">
+                        <div class="bg-white/10 rounded-2xl rounded-tr-none p-3 max-w-[85%] self-start backdrop-blur-sm">
+                            <p class="text-xs text-white/60 mb-1">العميل</p>
+                            مساء الخير، عيادة دكتور الأسنان؟ عاوز أحجز كشف النهاردة بالتجمع الخامس.
+                        </div>
+                        <div class="bg-white text-brand-900 rounded-2xl rounded-tl-none p-3 max-w-[85%] self-end shadow-md">
+                            <p class="text-xs text-brand-500 font-bold mb-1">مُجيب AI</p>
+                            أهلاً بحضرتك يا فندم! منورنا في التجمع الخامس. متاح حجز كشف أسنان النهاردة الساعة 7:00 مساءً أو 8:30 مساءً. تحب نثبت أنهي ميعاد؟
+                        </div>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-3 flex items-center justify-between text-xs text-white/80">
+                        <span>أوتوماتيكي بالكامل بواسطة Gemini 3 Flash</span>
+                        <span>🤖✨</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">لماذا يختار الأطباء منصة "مُجيب AI"؟</h2>
+                <p class="text-slate-600 text-lg">نقلة تكنولوجية حقيقية لعيادتك، تجعل إدارة حجوزات المرضى أكثر مرونة وسرعة من أي وقت مضى.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-500/30 hover:bg-brand-50/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-500 rounded-xl flex items-center justify-center mb-6 text-2xl">💬</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">ذكاء اصطناعي يفهم المصريين</h3>
+                    <p class="text-slate-600 leading-relaxed">البوت تم تدريبه ليفهم العامية المصرية بطلاقة تامة، والرد بشكل مهذب وودود يناسب طبيعة المرضى وصورة عيادتك الراقية.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-500/30 hover:bg-brand-50/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-500 rounded-xl flex items-center justify-center mb-6 text-2xl">📅</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">حجز ومزامنة فورية</h3>
+                    <p class="text-slate-600 leading-relaxed">يقوم البوت بعرض المواعيد المتاحة، واستقبال الاسم ورقم التليفون، ثم تأكيد الحجز ومزامنته فوراً مع لوحة تحكم الـ ERP لعيادتك.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:border-brand-500/30 hover:bg-brand-50/20 transition-all duration-300">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-500 rounded-xl flex items-center justify-center mb-6 text-2xl">🛡️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">واجهة برمجية رسمية ومستقرة</h3>
+                    <p class="text-slate-600 leading-relaxed">نعمل بالربط الرسمي مع WhatsApp Cloud API من شركة Meta، مما يضمن وصول الرسائل بنسبة 100% بدون حظر وبلا انقطاع.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">عن منصة "مُجيب AI"</h2>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    نحن في "مُجيب AI" نؤمن بأن الخدمة الطبية المتميزة تبدأ من أول تواصل للمريض مع العيادة. قمنا بتطوير نظام ذكي متكامل مصمم خصيصاً في نيو كايرو ليناسب المراكز الطبية الكبرى والعيادات التخصصية.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    نظامنا ليس مجرد بوت رد آلي جامد يعطي خيارات مرقمة، بل هو عميل ذكاء اصطناعي تفاعلي يبني حواراً مريحاً مع المريض، يجاوب على مواعيد العمل، أسعار الكشوفات، وأي إرشادات تود تحديدها له مسبقاً، كل ذلك بدقة وأمان.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100/50 space-y-6">
+                <div class="border-r-4 border-brand-500 pr-4">
+                    <h4 class="font-bold text-slate-900 text-lg">المقر الرئيسي</h4>
+                    <p class="text-slate-600 text-sm">نيو كايرو (New Cairo)، التجمع الخامس، القاهرة، مصر.</p>
+                </div>
+                <div class="border-r-4 border-brand-500 pr-4">
+                    <h4 class="font-bold text-slate-900 text-lg">قوة المعالجة</h4>
+                    <p class="text-slate-600 text-sm">مدعوم بنماذج Gemini 3 Flash السحابية وفائقة السرعة.</p>
+                </div>
+                <div class="border-r-4 border-brand-500 pr-4">
+                    <h4 class="font-bold text-slate-900 text-lg">حسابات رسمية وموثقة</h4>
+                    <p class="text-slate-600 text-sm">تكامل مباشر كشريك تقني مع واجهة Meta Business Cloud API.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">باقات مرنة تناسب عيادتك</h2>
+                <p class="text-slate-600 text-lg">ابدأ مجاناً وجرب جودة الرد وحجز المواعيد بنفسك.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">الباقة التجريبية</h3>
+                        <p class="text-slate-500 text-sm mb-6">لتجربة النظام وفحص الـ Webhooks</p>
+                        <div class="text-3xl font-extrabold text-slate-900 mb-6">مجاناً <span class="text-sm font-normal text-slate-500">/ لـ 3 أيام</span></div>
+                        <ul class="space-y-3 text-slate-600 text-sm">
+                            <li class="flex items-center gap-2">✔️ ربط برقم تيست تجريبي</li>
+                            <li class="flex items-center gap-2">✔️ رد ذكي لـ 100 رسالة يومياً</li>
+                            <li class="flex items-center gap-2">✔️ لوحة تحكم أساسية</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2.5 rounded-xl transition-all mt-8">ابدأ الآن</a>
+                </div>
+                <div class="bg-brand-900 p-8 rounded-3xl border border-brand-800 text-white flex flex-col justify-between shadow-xl shadow-brand-900/20 relative md:-translate-y-4">
+                    <div class="absolute -top-4 right-6 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full">الأكثر طلباً</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">الباقة المهنية </h3>
+                        <p class="text-brand-200 text-sm mb-6">للعيادات والمراكز التخصصية النشطة</p>
+                        <div class="text-3xl font-extrabold mb-6">تواصل معنا <span class="text-sm font-normal text-brand-300">/ شهرياً</span></div>
+                        <ul class="space-y-3 text-brand-100 text-sm">
+                            <li class="flex items-center gap-2">✨ ربط برقم عيادتك الرسمي</li>
+                            <li class="flex items-center gap-2">✨ ردود ذكية لا نهائية</li>
+                            <li class="flex items-center gap-2">✨ معالجة اللهجة المصرية 100%</li>
+                            <li class="flex items-center gap-2">✨ ربط الـ ERP وحفظ الحجوزات</li>
+                            <li class="flex items-center gap-2">✨ دعم فني 24/7</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-brand-500 hover:bg-brand-600 text-white font-extrabold py-3 rounded-xl transition-all mt-8 shadow-lg shadow-brand-500/20">احجز باقتك الرسمية</a>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">المؤسسات (Enterprise)</h3>
+                        <p class="text-slate-500 text-sm mb-6">للمستشفيات الكبرى ومجموعات العيادات</p>
+                        <div class="text-3xl font-extrabold text-slate-900 mb-6">باقات مخصصة <span class="text-sm font-normal text-slate-500">/ حسب الاحتياج</span></div>
+                        <ul class="space-y-3 text-slate-600 text-sm">
+                            <li class="flex items-center gap-2">✔️ ربط فروع وسيرفرات متعددة</li>
+                            <li class="flex items-center gap-2">✔️ معايير أمان HIPAA الطبية</li>
+                            <li class="flex items-center gap-2">✔️ تدريب AI مخصص باسم المستشفى</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full text-center bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2.5 rounded-xl transition-all mt-8">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 md:p-16 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100/50">
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">ابدأ ربط عيادتك الذكية اليوم!</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        هل تواجه مشكلة في تفعيل الـ WhatsApp API وتخطي القيود؟ فريقنا الفني متواجد لمساعدتك في الحصول على حساب رسمي وموثق ومربوط بنظام "مُجيب AI" في أسرع وقت.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg">📞</span>
+                            <div>
+                                <p class="text-xs text-slate-400">اتصل بنا / واتساب</p>
+                                <p class="font-bold text-slate-800" dir="ltr">+20 128 813 1446</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-lg">📍</span>
+                            <div>
+                                <p class="text-xs text-slate-400">المقر</p>
+                                <p class="font-bold text-slate-800">نيو كايرو، التجمع الخامس، القاهرة، مصر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-6 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('تم استلام طلبك يا هندسة! سنتواصل معك فورا.');">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">اسم العيادة / الطبيب</label>
+                            <input type="text" placeholder="مثال: عيادة تجميل الأسنان الحديثة" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 bg-white" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">رقم التليفون (الواتساب)</label>
+                            <input type="tel" placeholder="مثال: 01288131446" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 bg-white" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">ملاحظات أو تفاصيل طلبك</label>
+                            <textarea rows="3" placeholder="اكتب أي تفاصيل إضافية هنا..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 bg-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-lg py-3.5 rounded-xl transition-all shadow-lg shadow-brand-500/10">إرسال الطلب الفني</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-900 text-white/70 py-8 border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+            <p>© 2026 مُجيب AI (Mugeeb). جميع الحقوق محفوظة.</p>
+            <p>تم التطوير بذكاء وحب في نيو كايرو 🇪🇬</p>
+        </div>
+    </footer>
+
+</body>
+</html>
